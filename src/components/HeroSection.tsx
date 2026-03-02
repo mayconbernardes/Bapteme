@@ -31,16 +31,19 @@ const HeroSection = () => {
 
       {/* Title */}
       <h1 className="font-display text-3xl sm:text-5xl font-semibold text-foreground text-center leading-tight mb-3 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-        {t("Invitation au Baptême d'Alba", "Convite ao Batizado de Alba")}
+        {t("Baptême d'Alba", "Batizado de Alba")}
       </h1>
 
-      <p className="font-body text-muted-foreground text-lg sm:text-xl mb-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+      <p className="font-body text-muted-foreground text-lg sm:text-xl mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
         {t("9 mai 2026 – Quézac, Cantal", "9 de maio de 2026 – Quézac, Cantal")}
       </p>
 
-      <a href="#invitation" className="btn-gold animate-fade-in" style={{ animationDelay: '0.6s' }}>
-        {t("Découvrir l'invitation", "Ver o convite")}
-      </a>
+      <p className="font-display text-xl sm:text-2xl italic text-foreground leading-relaxed max-w-2xl text-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        {t(
+          "« C'est avec joie que nous vous invitons à célébrer le baptême de notre fille, Alba. »",
+          "« É com grande alegria que vos convidamos a celebrar o batismo da nossa filha, Alba. »"
+        )}
+      </p>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 animate-float">
