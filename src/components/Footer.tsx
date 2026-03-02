@@ -20,6 +20,12 @@ const Footer = () => {
       <p className="font-body text-xs text-muted-foreground">
         © 2026 – {t("Fait avec amour", "Feito com amor")} ❤️
       </p>
+      <p className="font-body text-sm text-muted-foreground mt-4">
+        {t("Créé par", "Criado por")}{' '}
+        <a href="https://creaktif.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline font-semibold">Cré'aktif</a>
+        {' '}·{' '}
+        <a href="https://www.instagram.com/crea_ktif" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Instagram</a>
+      </p>
     </footer>
   );
 };
