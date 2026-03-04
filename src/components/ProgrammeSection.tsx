@@ -8,24 +8,24 @@ const ProgrammeSection = () => {
     {
       dateFr: 'Vendredi 8 mai',
       datePt: 'Sexta-feira 8 de maio',
-      titleFr: 'Arrivée & Découverte',
-      titlePt: 'Chegada & Descoberta',
+      titleFr: 'Suggestions libres',
+      titlePt: 'Sugestões livres',
       itemsFr: [
-        'Arrivée à Quézac et installation',
-        'Balade dans le village et visite du Sanctuaire Notre-Dame',
-        'Apéritif de bienvenue en soirée',
+        'Journée libre (non organisée) : arrivée à Quézac et installation',
+        'Suggestion : balade dans le village et visite du Sanctuaire Notre-Dame',
+        'Suggestion : apéritif de bienvenue en soirée',
       ],
       itemsPt: [
-        'Chegada a Quézac e acomodação',
-        'Passeio pelo vilarejo e visita ao Santuário Notre-Dame',
-        'Aperitivo de boas-vindas à noite',
+        'Dia livre (não organizado): chegada a Quézac e acomodação',
+        'Sugestão: passeio pelo vilarejo e visita ao Santuário Notre-Dame',
+        'Sugestão: aperitivo de boas-vindas à noite',
       ],
     },
     {
       dateFr: 'Samedi 9 mai',
       datePt: 'Sábado 9 de maio',
-      titleFr: 'Le Baptême',
-      titlePt: 'O Batizado',
+      titleFr: 'Journée du baptême',
+      titlePt: 'Dia do batizado',
       itemsFr: [
         '11h00 – Cérémonie à l\'Église de Quézac',
         '12h30 – Repas festif à la Maison Béthanie',
@@ -40,17 +40,19 @@ const ProgrammeSection = () => {
     {
       dateFr: 'Dimanche 10 mai',
       datePt: 'Domingo 10 de maio',
-      titleFr: 'Excursion dans le Cantal',
-      titlePt: 'Excursão no Cantal',
+      titleFr: 'Suggestions libres dans le Cantal',
+      titlePt: 'Sugestões livres no Cantal',
       itemsFr: [
-        'Matin – Visite du Puy Mary (30 min) ou Village de Salers (25 min)',
-        'Déjeuner – Spécialités régionales (truffade, aligot)',
-        'Après-midi – Viaduc de Garabit ou randonnée libre',
+        'Journée libre (non organisée), chacun organise son programme',
+        'Suggestion matin : visite du Puy Mary (30 min) ou du village de Salers (25 min)',
+        'Suggestion déjeuner : spécialités régionales (truffade, aligot)',
+        'Suggestion après-midi : viaduc de Garabit ou randonnée libre',
       ],
       itemsPt: [
-        'Manhã – Visita ao Puy Mary (30 min) ou Vilarejo de Salers (25 min)',
-        'Almoço – Especialidades regionais (truffade, aligot)',
-        'Tarde – Viaduto de Garabit ou caminhada livre',
+        'Dia livre (não organizado), cada um organiza o seu programa',
+        'Sugestão de manhã: visita ao Puy Mary (30 min) ou ao vilarejo de Salers (25 min)',
+        'Sugestão de almoço: especialidades regionais (truffade, aligot)',
+        'Sugestão à tarde: viaduto de Garabit ou caminhada livre',
       ],
     },
   ];
@@ -63,6 +65,12 @@ const ProgrammeSection = () => {
           {t('Programme du weekend', 'Programa do fim de semana')}
         </h2>
         <div className="section-divider" />
+        <p className="max-w-3xl mx-auto mb-8 font-body text-sm text-muted-foreground">
+          {t(
+            'Seule la journée du 9 mai est organisée pour le baptême. Les autres jours sont des suggestions d\'activités, chacun s\'organise librement.',
+            'Apenas o dia 9 de maio é organizado para o batizado. Os outros dias são sugestões de atividades, cada um se organiza livremente.'
+          )}
+        </p>
 
         <div className="max-w-3xl mx-auto space-y-8">
           {days.map((day, i) => (
