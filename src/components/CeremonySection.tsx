@@ -130,8 +130,8 @@ const CeremonySection = () => {
                 </p>
                 <ul className="space-y-2">
                   {(t(
-                    'Sainte Marie, Mère de Dieu||Saint Joseph||Saint Jean-Baptiste||Saint Alban||Sainte Anne||Saint Joachim||Sainte Thérèse de Lisieux||Saint François d’Assise||Tous les saints et saintes de Dieu',
-                    'Santa Maria, Mãe de Deus||São José||São João Batista||São Albano||Santa Ana||São Joaquim||Santa Teresinha de Lisieux||São Francisco de Assis||Todos os santos e santas de Deus'
+                    'Sainte Marie, Mère de Dieu||Notre-Dame d\'Aparecida||Saint André||Saint Pierre||Saint Antoine||Sainte Bénédicte||Sainte Brune||Saint Joseph||Saint Jean-Baptiste||Saint Alban||Sainte Anne||Saint Joachim||Sainte Thérèse de Lisieux||Saint François d’Assise||Tous les saints et saintes de Dieu',
+                    'Santa Maria, Mãe de Deus||Nossa Senhora Aparecida||São André||São Pedro||Santo Antônio||Santa Benedita||Santa Bruna||São José||São João Batista||São Albano||Santa Ana||São Joaquim||Santa Teresinha de Lisieux||São Francisco de Assis||Todos os santos e santas de Deus'
                   ))
                     .split('||')
                     .map((item, i) => (
