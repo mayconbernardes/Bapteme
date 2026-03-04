@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  { id: 'accueil', fr: 'Accueil', pt: 'Início' },
   { id: 'ceremonie', fr: 'Cérémonie – 9 mai', pt: 'Cerimônia – 9 maio' },
   { id: 'liturgie', fr: 'Livret liturgique', pt: 'Guia litúrgico' },
   { id: 'musiques', fr: 'Musiques', pt: 'Músicas' },
