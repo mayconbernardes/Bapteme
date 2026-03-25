@@ -1,0 +1,6 @@
+services:
+  - type: static_site
+    name: bapteme
+    env: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
