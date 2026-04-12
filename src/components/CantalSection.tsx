@@ -278,7 +278,7 @@ const CantalSection = () => {
       <div className="section-container">
         <h2 className="section-title">
           <Mountain className="inline-block mr-2 mb-1" size={28} />
-          {t('Visiter le Cantal', 'Visitar o Cantal')}
+          {t('Visiter le Cantal et ses environs', 'Visitar o Cantal e seus arredores')}
         </h2>
         <div className="section-divider" />
 
