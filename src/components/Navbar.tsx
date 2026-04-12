@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { id: 'ceremonie', fr: 'Cérémonie – 9 mai', pt: 'Cerimônia – 9 maio' },
-  { id: 'liturgie', fr: 'Livret liturgique', pt: 'Guia litúrgico' },
+  { id: 'liturgie', fr: 'Parrain et Marraine', pt: 'Padrinho e Madrinha' },
   { id: 'musiques', fr: 'Musiques', pt: 'Músicas' },
   { id: 'programme', fr: 'Programme du weekend', pt: 'Programa do fim de semana' },
   { id: 'cantal', fr: 'Visiter le Cantal', pt: 'Visitar o Cantal' },

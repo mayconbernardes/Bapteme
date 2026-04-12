@@ -13,12 +13,10 @@ const ProgrammeSection = () => {
       itemsFr: [
         'Journée libre (non organisée) : arrivée à Quézac et installation',
         'Suggestion : balade dans le village et visite du Sanctuaire Notre-Dame',
-        'Suggestion : apéritif de bienvenue en soirée',
       ],
       itemsPt: [
         'Dia livre (não organizado): chegada a Quézac e acomodação',
         'Sugestão: passeio pelo vilarejo e visita ao Santuário Notre-Dame',
-        'Sugestão: aperitivo de boas-vindas à noite',
       ],
     },
     {
