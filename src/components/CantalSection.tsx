@@ -98,7 +98,7 @@ const regions = [
           {
             labelFr: 'Office de tourisme',
             labelPt: 'Turismo',
-            href: 'https://www.pays-saint-flour.fr/decouvrir/chaudes-aigues/',
+            href: 'https://www.pays-saint-flour.fr/incontournables/chaudes-aigues-station-thermale/',
           },
         ],
       },
@@ -112,7 +112,7 @@ const regions = [
           {
             labelFr: 'Infos marché',
             labelPt: 'Informações',
-            href: 'https://chataigneraie-cantal.com/agenda/marche-hebdomadaire-de-maurs',
+            href: 'https://www.jours-de-marche.fr/15600-maurs/',
           },
         ],
       },
@@ -126,7 +126,7 @@ const regions = [
           {
             labelFr: 'Puech des Ouilhes',
             labelPt: 'Puech des Ouilhes',
-            href: 'https://www.paysaurillactourisme.com/offres/la-presquile-du-puech-des-ouilhes-lacapelle-viescamp-fr-6058214/',
+            href: 'https://www.aurillacagglo.fr/fr/lac-saint-etienne-cantales/',
           },
           {
             labelFr: 'Plage de Rénac',
