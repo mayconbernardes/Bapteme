@@ -12,11 +12,11 @@ const ProgrammeSection = () => {
       titlePt: 'Sugestões livres',
       itemsFr: [
         'Journée libre (non organisée) : arrivée à Quézac et installation',
-        'Suggestion : balade dans le village et visite du Sanctuaire Notre-Dame',
+        'Suggestion : visite de la région',
       ],
       itemsPt: [
         'Dia livre (não organizado): chegada a Quézac e acomodação',
-        'Sugestão: passeio pelo vilarejo e visita ao Santuário Notre-Dame',
+        'Sugestão: visita pela região',
       ],
     },
     {
@@ -27,30 +27,24 @@ const ProgrammeSection = () => {
       itemsFr: [
         '11h00 – Cérémonie à l\'Église de Quézac',
         '12h30 – Repas festif à la Maison Béthanie',
-        'Après-midi – Célébration en famille',
+        'Repas ensemble pour ceux qui le souhaitent',
       ],
       itemsPt: [
         '11h00 – Cerimônia na Igreja de Quézac',
         '12h30 – Almoço festivo na Maison Béthanie',
-        'Tarde – Celebração em família',
+        'Almoço juntos para quem desejar',
       ],
     },
     {
       dateFr: 'Dimanche 10 mai',
       datePt: 'Domingo 10 de maio',
-      titleFr: 'Suggestions libres dans le Cantal',
-      titlePt: 'Sugestões livres no Cantal',
+      titleFr: 'Brunch',
+      titlePt: 'Brunch',
       itemsFr: [
-        'Journée libre (non organisée), chacun organise son programme',
-        'Suggestion matin : visite du Puy Mary (30 min) ou du village de Salers (25 min)',
-        'Suggestion déjeuner : spécialités régionales (truffade, aligot)',
-        'Suggestion après-midi : viaduc de Garabit ou randonnée libre',
+        'Brunch pour ceux qui le souhaitent au 9 Les Aygades',
       ],
       itemsPt: [
-        'Dia livre (não organizado), cada um organiza o seu programa',
-        'Sugestão de manhã: visita ao Puy Mary (30 min) ou ao vilarejo de Salers (25 min)',
-        'Sugestão de almoço: especialidades regionais (truffade, aligot)',
-        'Sugestão à tarde: viaduto de Garabit ou caminhada livre',
+        'Brunch para quem desejar no 9 Les Aygades',
       ],
     },
   ];
