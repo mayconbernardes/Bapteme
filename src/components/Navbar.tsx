@@ -1,5 +1,5 @@
 import { useLang } from '@/contexts/LanguageContext';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
@@ -15,15 +15,47 @@ const Navbar = () => {
   const { t, lang, toggle } = useLang();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [menuClosing, setMenuClosing] = useState(false);
+  const closeTimer = useRef<number | null>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50);
+      if (mobileOpen && window.scrollY > 0) {
+        closeMobileMenu();
+      }
+    };
+
     window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      if (closeTimer.current) {
+        window.clearTimeout(closeTimer.current);
+      }
+    };
+  }, [mobileOpen]);
+
+  const closeMobileMenu = () => {
+    if (!mobileOpen || menuClosing) return;
+    setMenuClosing(true);
+    closeTimer.current = window.setTimeout(() => {
+      setMobileOpen(false);
+      setMenuClosing(false);
+      closeTimer.current = null;
+    }, 200);
+  };
+
+  const openMobileMenu = () => {
+    if (closeTimer.current) {
+      window.clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+    setMenuClosing(false);
+    setMobileOpen(true);
+  };
 
   const scrollTo = (id: string) => {
-    setMobileOpen(false);
+    closeMobileMenu();
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
@@ -65,7 +97,13 @@ const Navbar = () => {
             </button>
             <button
               className="lg:hidden p-2"
-              onClick={() => setMobileOpen(!mobileOpen)}
+              onClick={() => {
+                if (mobileOpen) {
+                  closeMobileMenu();
+                } else {
+                  openMobileMenu();
+                }
+              }}
               aria-label="Menu"
             >
               {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -75,14 +113,18 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      {mobileOpen && (
+      {(mobileOpen || menuClosing) && (
         <div className="lg:hidden fixed inset-0 z-40">
           <button
             className="absolute inset-0 bg-black/20"
-            onClick={() => setMobileOpen(false)}
+            onClick={closeMobileMenu}
             aria-label="Fermer le menu"
           />
-          <div className="absolute left-0 right-0 top-16 bg-card shadow-2xl border-t border-border animate-fade-in">
+          <div
+            className={`absolute left-0 right-0 top-16 bg-card shadow-2xl border-t border-border transition-transform duration-200 ${
+              menuClosing ? '-translate-y-full' : 'translate-y-0'
+            }`}
+          >
             <div className="px-6 py-4 space-y-3">
               {navItems.map(item => (
                 <button
