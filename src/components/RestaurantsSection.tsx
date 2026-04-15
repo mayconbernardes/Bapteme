@@ -31,6 +31,20 @@ const restaurants = [
     link: 'https://www.restaurant-latabledesmatieres-aurillac.com/',
   },
   {
+    name: 'L\'à Côté',
+    location: 'Aurillac',
+    descFr: 'Petit restaurant de quartier recommandé pour une cuisine locale conviviale.',
+    descPt: 'Pequeno restaurante de bairro recomendado para uma cozinha local acolhedora.',
+    link: 'https://share.google/lQD60ePmrnkW7jYby',
+  },
+  {
+    name: 'A la Mais\'Omps',
+    location: 'Omps',
+    descFr: 'Cuisine maison, locale et créative dans un cadre chaleureux.',
+    descPt: 'Cozinha caseira, local e criativa em um ambiente acolhedor.',
+    link: 'https://alamaisomps.eatbu.com/?lang=fr',
+  },
+  {
     name: 'Brasserie Côté Rive',
     location: 'Aurillac',
     descFr: 'Brasserie à consulter directement sur Facebook pour les infos et actualités.',

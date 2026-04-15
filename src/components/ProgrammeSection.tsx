@@ -27,12 +27,12 @@ const ProgrammeSection = () => {
       itemsFr: [
         '11h00 – Cérémonie à l\'Église de Quézac',
         '12h30 – Repas festif à la Maison Béthanie',
-        'Repas ensemble pour ceux qui le souhaitent',
+        'Soirée : Repas ensemble pour ceux qui le souhaitent',
       ],
       itemsPt: [
         '11h00 – Cerimônia na Igreja de Quézac',
         '12h30 – Almoço festivo na Maison Béthanie',
-        'Almoço juntos para quem desejar',
+        'Noite : Almoço juntos para quem desejar',
       ],
     },
     {
@@ -41,10 +41,10 @@ const ProgrammeSection = () => {
       titleFr: 'Brunch',
       titlePt: 'Brunch',
       itemsFr: [
-        'Brunch pour ceux qui le souhaitent au 9 Les Ayguades, 15130 Arpajon-sur-Cère',
+        'Brunch pour ceux qui le souhaitent au 9 Les Aygades, 15130 Arpajon-sur-Cère',
       ],
       itemsPt: [
-        'Brunch para quem desejar em 9 Les Ayguades, 15130 Arpajon-sur-Cère',
+        'Brunch para quem desejar em 9 Les Aygades, 15130 Arpajon-sur-Cère',
       ],
     },
   ];
