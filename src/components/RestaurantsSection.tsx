@@ -32,9 +32,9 @@ const restaurants = [
   },
   {
     name: 'L\'à Côté',
-    location: 'Aurillac',
-    descFr: 'Petit restaurant de quartier recommandé pour une cuisine locale conviviale.',
-    descPt: 'Pequeno restaurante de bairro recomendado para uma cozinha local acolhedora.',
+    location: 'Maurs',
+    descFr: 'Petit restaurant de Maurs recommandé pour une cuisine locale conviviale.',
+    descPt: 'Pequeno restaurante de Maurs recomendado para uma cozinha local acolhedora.',
     link: 'https://share.google/lQD60ePmrnkW7jYby',
   },
   {
@@ -67,8 +67,8 @@ const RestaurantsSection = () => {
 
         <p className="font-body text-center text-muted-foreground max-w-2xl mx-auto mb-8">
           {t(
-            'Voici quelques restaurants que nous recommandons autour d’Aurillac.',
-            'Aqui estão alguns restaurantes que recomendamos na região de Aurillac.'
+            'Voici quelques restaurants que nous recommandons autour d’Aurillac et dans les environs.',
+            'Aqui estão alguns restaurantes que recomendamos na região de Aurillac e arredores.'
           )}
         </p>
 
