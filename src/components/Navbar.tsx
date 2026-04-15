@@ -76,17 +76,24 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-card/98 backdrop-blur-md border-t border-border animate-fade-in">
-          <div className="px-6 py-4 space-y-3">
-            {navItems.map(item => (
-              <button
-                key={item.id}
-                onClick={() => scrollTo(item.id)}
-                className="block w-full text-left nav-link py-2"
-              >
-                {t(item.fr, item.pt)}
-              </button>
-            ))}
+        <div className="lg:hidden fixed inset-0 z-40">
+          <button
+            className="absolute inset-0 bg-black/20"
+            onClick={() => setMobileOpen(false)}
+            aria-label="Fermer le menu"
+          />
+          <div className="absolute left-0 right-0 top-16 bg-card shadow-2xl border-t border-border animate-fade-in">
+            <div className="px-6 py-4 space-y-3">
+              {navItems.map(item => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollTo(item.id)}
+                  className="block w-full text-left nav-link py-2"
+                >
+                  {t(item.fr, item.pt)}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       )}
