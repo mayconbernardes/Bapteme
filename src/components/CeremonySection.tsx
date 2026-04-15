@@ -29,18 +29,6 @@ const CeremonySection = () => {
             <p className="font-body text-sm text-muted-foreground mb-4">
               {t("Sanctuaire Notre-Dame de Quézac", "Santuário Notre-Dame de Quézac")}
             </p>
-            <div className="rounded-lg overflow-hidden mb-4 aspect-video">
-              <iframe
-                title={t("Carte Église de Quézac", "Mapa Igreja de Quézac")}
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.5!2d2.2284!3d44.8674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ad4a3079dde70b%3A0x890ab91c7a82a72e!2s%C3%89glise%20de%20Qu%C3%A9zac!5e0!3m2!1sfr!2sfr!4v1709400000000"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
             <a
               href="https://maps.app.goo.gl/HNFFENNEYDirdUtt6"
               target="_blank"
@@ -67,18 +55,6 @@ const CeremonySection = () => {
             <p className="font-body text-sm text-muted-foreground mb-4">
               1 Rue des Cèdres, 15600 Quézac
             </p>
-            <div className="rounded-lg overflow-hidden mb-4 aspect-video">
-              <iframe
-                title={t("Carte Maison Béthanie", "Mapa Maison Béthanie")}
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.5!2d2.228!3d44.867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ad4a0e6b8f9c0d%3A0x4b2c1d3e5f6a7b8c!2sMaison%20B%C3%A9thanie!5e0!3m2!1sfr!2sfr!4v1709400000000"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
             <a
               href="https://maps.app.goo.gl/dvydCp3W3avY1h1P9"
               target="_blank"
